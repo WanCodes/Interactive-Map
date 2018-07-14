@@ -1,0 +1,322 @@
+@import url('https://fast.fonts.net/t/1.css?apiType=css&projectid=fb8fff3a-6d44-4586-bdf9-ef13411f84ff');
+
+@font-face {
+  font-family: 'Avenir Next';
+  font-weight: 300; /* Avenir Next Light */
+  src: url('https://a.c-dn.net/b/1wZ9Tf/0ecef829-586e-426d-a633-4c8a8c926769.eot?#iefix');
+  src: url('https://a.c-dn.net/b/1wZ9Tf/0ecef829-586e-426d-a633-4c8a8c926769.eot?#iefix') format('eot'),
+    url('https://a.c-dn.net/b/2o8NZh/49c5f3e1-5867-4b1d-a843-2d07fa60d85d.woff2') format('woff2'),
+    url('https://a.c-dn.net/b/2mVm34/f401df6f-54eb-406c-b46a-90b9451c598d.woff') format('woff'),
+    url('https://a.c-dn.net/b/4egiA1/276fe25e-e430-4376-b33c-705dd77b3dba.ttf') format('truetype'),
+    url('https://a.c-dn.net/b/1vaGh0/869dc33b-3685-4d74-a51c-82b435579093.svg#869dc33b-3685-4d74-a51c-82b435579093') format('svg');
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  font-weight: 400; /* Avenir Next Regular */
+  src: url('https://a.c-dn.net/b/48xOJT/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix');
+  src: url('https://a.c-dn.net/b/48xOJT/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix') format('eot'),
+    url('https://a.c-dn.net/b/2gE0Vv/2cd55546-ec00-4af9-aeca-4a3cd186da53.woff2') format('woff2'),
+    url('https://a.c-dn.net/b/2fgPZL/1e9892c0-6927-4412-9874-1b82801ba47a.woff') format('woff'),
+    url('https://a.c-dn.net/b/4gQvTz/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf') format('truetype'),
+    url('https://a.c-dn.net/b/1ejFrH/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f') format('svg');
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  font-weight: 500; /* Avenir Next Medium */
+  src: url('https://a.c-dn.net/b/0V3RKa/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix');
+  src: url('https://a.c-dn.net/b/0V3RKa/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix') format('eot'),
+    url('https://a.c-dn.net/b/0aezsK/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2') format('woff2'),
+    url('https://a.c-dn.net/b/20Rwl3/f26faddb-86cc-4477-a253-1e1287684336.woff') format('woff'),
+    url('https://a.c-dn.net/b/2i5HRv/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf') format('truetype'),
+    url('https://a.c-dn.net/b/3etdXt/a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg#a89d6ad1-a04f-4a8f-b140-e55478dbea80') format('svg');
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  font-weight: 600; /* Avenir Next Demi */
+  src: url('https://a.c-dn.net/b/4a39Ie/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix');
+  src: url('https://a.c-dn.net/b/4a39Ie/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix') format('eot'),
+    url('https://a.c-dn.net/b/1xR186/aad99a1f-7917-4dd6-bbb5-b07cedbff64f.woff2') format('woff2'),
+    url('https://a.c-dn.net/b/1NivJO/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff') format('woff'),
+    url('https://a.c-dn.net/b/2bkMsy/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf') format('truetype'),
+    url('https://a.c-dn.net/b/0pDplY/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d') format('svg');
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  font-weight: 700; /* Avenir Next Bold */
+  src: url('https://a.c-dn.net/b/3tdoYN/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix');
+  src: url('https://a.c-dn.net/b/3tdoYN/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix') format('eot'),
+    url('https://a.c-dn.net/b/4ofqyU/14c73713-e4df-4dba-933b-057feeac8dd1.woff2') format('woff2'),
+    url('https://a.c-dn.net/b/30FGTu/b8e906a1-f5e8-4bf1-8e80-82c646ca4d5f.woff') format('woff'),
+    url('https://a.c-dn.net/b/1Pgjb3/890bd988-5306-43ff-bd4b-922bc5ebdeb4.ttf') format('truetype'),
+    url('https://a.c-dn.net/b/16bVVM/ed104d8c-7f39-4e8b-90a9-4076be06b857.svg#ed104d8c-7f39-4e8b-90a9-4076be06b857') format('svg');
+}
+
+body{
+	font-family: 'Avenir Next', Arial, Helvetica, sans-serif;
+  color: black;
+  margin: 0px;
+  line-height: 1.2;
+}
+p{
+  margin:0px;
+}
+#container{
+  max-width: 800px;
+}
+#map{
+  position: absolute;
+  width: 800px;
+  height: 467px;
+  background: url("map.jpg") no-repeat;
+}
+
+
+/*------Chicago------*/
+#chicago_point{
+  position: absolute;
+  left: 190px;
+  top:  184px;
+}
+#chicago_point .message_box{
+  left:-367px;
+}
+#chicago_point .message_box, #chicago_point .msg_mask{
+  width: 367px;
+  height: 136px;
+}
+#chicago_point .msg_mask{
+  top:20px;
+}
+#chicago_point .label{
+  top:-63px;
+}
+#chicago_point .label_line{
+  top:-63px;
+  height: 63px;
+}
+/*-------------------*/
+
+/*------London------*/
+#london_point{
+  position: absolute;
+  left: 370px;
+  top:  155px;
+}
+#london_point .message_box{
+  left:-417px;
+}
+#london_point .message_box, #london_point .msg_mask{
+  width: 417px;
+  height: 154px;
+}
+#london_point .msg_mask{
+  top:20px;
+}
+#london_point .label{
+  top:-101px;
+}
+#london_point .label_line{
+  top:-101px;
+  height: 101px;
+}
+/*-------------------*/
+
+/*------krakow------*/
+#krakow_point{
+  position: absolute;
+  left: 405px;
+  top:  160px;
+}
+#krakow_point .message_box{
+  left:-380px;
+}
+#krakow_point .message_box, #krakow_point .msg_mask{
+  width: 380px;
+  height: 138px;
+}
+#krakow_point .msg_mask{
+  top:20px;
+}
+#krakow_point .label{
+  top:-64px;
+}
+#krakow_point .label_line{
+  top:-64px;
+  height: 64px;
+}
+/*-------------------*/
+/*------bangalore------*/
+#bangalore_point{
+  position: absolute;
+  left: 530px;
+  top:  255px;
+}
+#bangalore_point .message_box{
+  left:380px;
+}
+#bangalore_point .message_box, #bangalore_point .msg_mask{
+  width: 380px;
+  height: 138px;
+}
+#bangalore_point .msg_mask{
+  top:-160px;
+  left: -380px;
+}
+#bangalore_point .label{
+  top:24px;
+  left: -121px;
+}
+#bangalore_point .label_line{
+  top:0px;
+  height: 24px;
+}
+/*-------------------*/
+/*------melbourne------*/
+#melbourne_point{
+  position: absolute;
+  left: 668px;
+  top:  370px;
+}
+#melbourne_point .message_box{
+  left:380px;
+}
+#melbourne_point .message_box, #melbourne_point .msg_mask{
+  width: 380px;
+  height: 138px;
+}
+#melbourne_point .msg_mask{
+  top:-160px;
+  left: -380px;
+}
+#melbourne_point .label{
+  top:25px;
+  left: -130px;
+}
+#melbourne_point .label_line{
+  top:0px;
+  height: 25px;
+}
+/*-------------------*/
+#msg_litebox{
+  position: absolute;
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
+#msg_litebox .message_box{
+  position: absolute;
+  pointer-events: none;
+  max-width: 800px;
+  max-height: 467px;
+  box-sizing: border-box;
+  padding: 1.5em;
+  padding-top: 2.5em;
+  left: 10px;
+  top:10px;
+  bottom:10px;
+  right:10px;
+}
+.label_line{
+  position: absolute;
+  background-color: #214464;
+  width: 1px;
+}
+.label{
+  position: absolute;
+  background-color: #214464;
+  color: white;
+  font-size: 24px;
+  padding: .1em .2em .1em .2em;
+  cursor: pointer;
+}
+.label:hover{
+  opacity: 0.8;
+}
+.msg_mask{
+  position: absolute;
+  overflow: hidden;
+  pointer-events: none;
+}
+.close_btn{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  top:10px;
+  background:url("close_button.png") no-repeat center;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.message_box{
+  position: absolute;
+  background-color: rgba(32,58,83,.8);
+  opacity: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.title{
+  color: white;
+  font-weight: 500;
+  padding-bottom: 10px;
+  font-size: 18px
+}
+.message{
+  color:white;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.line{
+  position: absolute;
+  width: 1px;
+  height: 0px;
+  box-sizing: border-box;
+  background: #203a53;
+  pointer-events: none;
+  height: 0px;
+  top:0px;
+}
+.point{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -5px; 
+  top:-5px;
+  background-color: #203a53;
+  border-radius: 10px;
+}
+.point .click_area{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -5px;
+  top:-5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+   #msg_litebox .message {
+      font-size:11px;
+   }
+   #msg_litebox .title {
+      font-size:14px;
+   }
+   #msg_litebox .message_box{
+      padding-top: 1.5em;
+   }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+   #msg_litebox .message {
+      font-size: 14px;
+   }
+   #msg_litebox .title {
+      font-size:18px;
+   }
+}
+

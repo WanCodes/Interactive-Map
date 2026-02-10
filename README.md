@@ -1,5 +1,7 @@
 ## Interactive Office Locations Map
 
+<img width="800" height="468" alt="Screenshot 2026-02-10 at 11 04 16" src="https://github.com/user-attachments/assets/66669434-a105-4228-a455-9d338768c3af" />
+
 An interactive world map showcasing office locations. Each location has a clickable point and label that reveals a description panel on larger screens and a lightbox-style message on smaller screens.
 
 ### Features

@@ -1,65 +1,80 @@
-## Interactive Office Locations Map
+# Interactive Map
 
-<img width="800" height="468" alt="Screenshot 2026-02-10 at 11 04 16" src="https://github.com/user-attachments/assets/66669434-a105-4228-a455-9d338768c3af" />
+<img width="800" height="468" alt="Office map with markers for London, Krakow, Chicago, Bangalore, and Melbourne" src="https://github.com/user-attachments/assets/66669434-a105-4228-a455-9d338768c3af" />
 
-An interactive world map showcasing office locations. Each location has a clickable point and label that reveals a description panel on larger screens and a lightbox-style message on smaller screens.
+Responsive interactive map of IG Group offices, built for the [careers page](http://www.iggroup.com/careers). London, Krakow, Chicago, Bangalore, and Melbourne are clickable points. A wide layout opens a description panel joined to the city by an animated line. Under a container width of 700px, the same copy opens in a lightbox.
 
-### Features
+**Wan Yau** · Senior Full Stack Developer · London · [GitHub WanCodes](https://github.com/WanCodes)
 
-- **Responsive map scaling**: The map scales with the container width while keeping markers, labels, and callouts positioned correctly.
-- **Interactive markers**: Clicking a point or its label opens a message panel connected by an animated line.
-- **Mobile-friendly lightbox**: On small screens, messages appear in a centered lightbox instead of fixed side panels.
-- **Smooth animations**: Uses GSAP `TweenMax` for line and panel animations.
+The public careers page has been redesigned and no longer shows this map. This repository is the source. The initial commit is July 2018.
 
-### Tech Stack
+## Features
 
-- **HTML**: Structure in `index.html`
-- **CSS**: Layout, fonts, and map styling in `map.css`
-- **JavaScript**: Interaction logic in `map.js` using:
-  - jQuery (from CDN)
-  - GSAP TweenMax (from CDN)
+- **Scaled artwork, stable pins.** `map.jpg` is 800×467. `#map` scales to the width of `#container` (max-width 800px) from the top-left. Marker dots are counter-scaled so they stay a constant size. Connector length is measured from each panel on resize, so the line still meets the callout after scaling.
+- **One city at a time.** Click the dot or its label. Other panels close, a line grows to the panel (0.3s), then the description slides in (0.3s). Closing reverses that: the panel slides away, then the line collapses. Each label also has its own static line, separate from that animated connector.
+- **Narrow layout.** When `#container` is narrower than 700px, side panels and animated connectors are hidden. The description opens in `#msg_litebox`, sized to the scaled map, with a 0.5s scale and fade. Clicking the lightbox closes it. At 700px and above the lightbox is not displayed. Below a viewport width of 400px, the lightbox title and message use smaller type.
+- **Office copy in the page.** Titles and descriptions live in each city block in `index.html`. The lightbox copies `.title` and `.message` from the city that was opened.
 
-### Project Structure
+## Tech stack
 
-- **`index.html`**: Main HTML page that loads the map, styles, and scripts.
-- **`map.css`**: Styles for the map background, points, labels, lines, and message panels.
-- **`map.js`**: `Map` object that:
-  - Tracks available locations
-  - Registers click handlers for each location
-  - Calculates and animates line height/position
-  - Opens and closes location panels and the mobile lightbox
-- **Assets (expected)**:
-  - `map.jpg` – background image for the map (referenced in `map.css`)
-  - `close_button.png` – close icon for message boxes (referenced in `map.css`)
+Static files. There is no package manager and no build.
 
-### Getting Started
+| Piece | Source |
+| --- | --- |
+| Markup | `index.html` |
+| Layout and type | `map.css` |
+| Interaction | `map.js` (`Map`, started from a jQuery ready handler) |
+| DOM | jQuery 3.2.1 (Google CDN) |
+| Animation | GSAP TweenMax 1.18.0 (cdnjs) |
+| Map | `map.jpg` (800×467) |
+| Close icon | `close_button.png` (14×14) |
+| Type | Avenir Next (300–700) from Fonts.com (`fast.fonts.net`) and `a.c-dn.net`, then Arial and Helvetica. Message body copy is Arial. |
 
-1. **Clone or download** this repository.
-2. Ensure `index.html`, `map.css`, `map.js`, `map.jpg`, and `close_button.png` are in the same directory.
-3. Open `index.html` directly in a modern browser **or** serve the folder with a static file server, for example:
+`index.html` sets `X-UA-Compatible` to `IE=10,Edge`. It does not set a viewport meta tag, so a phone browser can lay the page out wider than 700px and stay on the side panels. To see the lightbox, narrow the window below 700px, or add `<meta name="viewport" content="width=device-width, initial-scale=1">` on the host page.
+
+jQuery, TweenMax, and Avenir Next load from CDNs, so the page needs a network connection. The map image and close icon are in the repository. If the webfonts do not load, the Arial and Helvetica fallbacks apply.
+
+## Project structure
+
+```
+Interactive-Map/
+├── index.html         # One .country block per city, plus #msg_litebox
+├── map.css            # Pin positions, panels, type, lightbox type sizes
+├── map.js             # Listeners, scale, line length, open and close
+├── map.jpg            # Map background, 800×467
+└── close_button.png   # Close icon, 14×14
+```
+
+## Run
+
+Nothing to install or compile.
 
 ```bash
+git clone https://github.com/WanCodes/Interactive-Map.git
 cd Interactive-Map
 python3 -m http.server 8000
 ```
 
-Then visit `http://localhost:8000` in your browser.
+Open [http://localhost:8000](http://localhost:8000).
 
-### Customizing Locations
+Opening `index.html` directly also works. `map.css`, `map.js`, and the images sit next to that file. jQuery and TweenMax come from CDNs.
 
-- **Add or remove locations in JavaScript**:
-  - Edit the `this.countires` array in `map.js` to include or remove location names.
-- **Add corresponding HTML blocks**:
-  - For each location (e.g. `london`), create a `div` with id `<name>_point` in `index.html`, matching the existing structure for point, label, and message box.
-- **Adjust positioning in CSS**:
-  - Add a `#<name>_point` section in `map.css` (similar to `#chicago_point`, `#london_point`, etc.) and tweak `left`/`top` and label/line offsets.
+## Add a city
 
-### Browser Support
+The city list, the markup, and the CSS positions are maintained separately. In `map.js` the list is the property `countires`:
 
-- Designed for modern browsers.
-- Uses external font and script CDNs, so an internet connection is required unless you host those assets locally.
+```js
+this.countires = [
+  { name: "chicago" },
+  { name: "london" },
+  { name: "krakow" },
+  { name: "bangalore" },
+  { name: "melbourne" }
+];
+```
 
-### License
+1. Append an entry such as `{ name: "singapore" }`. The name is the id prefix and must match `{name}_point`.
+2. Copy a `.country` block in `index.html`. The London block is a complete example: `.point` with `.click_area`, `.label`, `.label_line`, `.line`, and `.msg_mask` > `.message_box` (`.close_btn`, `.title`, `.message`). Set the id, label, title, and message.
+3. Add a `#singapore_point` section in `map.css`, using the same 800×467 coordinate space as the other cities. `left` and `top` place the pin. Label offset, label-line height, and message-box position are set on the child selectors. London, Krakow, and Chicago open the panel to the left of the pin. Bangalore and Melbourne open it to the right.
 
-Add your preferred license here (e.g. MIT). If this is for internal/demo use only, document any usage restrictions your team requires.
-
+Click handlers are bound from that array on load. Line length is measured from the panel, so a new city does not need a separate JavaScript measurement.
